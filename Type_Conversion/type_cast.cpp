@@ -46,25 +46,9 @@ void limits() {
   std::cout << "Max int: " << std::numeric_limits<int>::max() << "\n";
 }
 
-void use_case() {
-  int age = 30;
-  float price = 9.99f;
-  double precisionValue = 1.23456789;
-  char initial = 'A';
-  bool isAvailable = true;
-  std::cout << "Age: " << age << ", Price: " << price
-            << ", Precision Value: " << precisionValue
-            << ", Initial: " << initial << ", Availability: " << isAvailable
-            << std::endl;
-}
 
 int main() {
-  double a = 3.14f;
-  std::cout << sizeof(int) << '\n';
-  std::cout << sizeof(long) << '\n';
-  std::cout << sizeof(long long) << '\n';
-  std::cout << sizeof(float) << '\n';
-  std::cout << sizeof(double) << '\n';
+  
 
   return 0;
 }
