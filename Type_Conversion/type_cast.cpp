@@ -26,16 +26,7 @@ const_cast
 void dynamiccast(double a) {}
 
 void staticcast(double a) {
-  int b = static_cast<int>(a);  // becomes integer number
-  float largeValue = 3e10f;     // Way too big for a standard int
-
-  if (largeValue > std::numeric_limits<int>::max() ||
-      largeValue < std::numeric_limits<int>::lowest()) {
-    // Handle the error safely before casting
-    throw std::overflow_error("Float value is out of bounds for an int!");
-  }
-
-  int safeInt = static_cast<int>(largeValue);
+   
 }
 
 void reinterpretcast(double a) {}
